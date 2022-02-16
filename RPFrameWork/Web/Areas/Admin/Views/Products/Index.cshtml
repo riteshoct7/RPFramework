@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<style>
+    .text-right {
+        text-align: right !important;
+    }
+</style>
+
+<div class="p-4" style="border-radius:20px;">
+    <div class="row">
+        <div class="col-6">
+            <h1 class="text-primary">Products List</h1>
+        </div>
+        <div class="col-6 text-right">
+            <a class="btn btn-primary" asp-action="Create"><i class="fas fa-plus"></i> &nbsp; Create New Product</a>
+        </div>
+    </div>
+    <br />
+    <div class="p-3 border rounded" style="background-color:#cde8e2">
+        <table class="table table-stiped table-bordered display responsive nowrap" style="width:100%;" id="tblProduct">
+            <thead class="thead-dark">
+                <tr class="table-danger">
+                    <th>Product Name</th>
+                    <th>Product Description</th>                    
+                    <th>Catgeory Name</th>
+                    <th>Category Description</th>                    
+                    <th>Price</th>  
+                    <th>Image</th>                     
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts {
+<script src="~/js/product.js"></script>
+}

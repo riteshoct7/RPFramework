@@ -1,0 +1,26 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/RPFrameWork/Common/bin
+/RPFrameWork/Common/obj
+/RPFrameWork/.vs/RPFrameWork
+/RPFrameWork/Dtos/bin
+/RPFrameWork/Dtos/obj
+/RPFrameWork/Entities/obj
+/RPFrameWork/Entities/bin
+/RPFrameWork/Repository/obj
+/RPFrameWork/Repository/bin
+/RPFrameWork/Resources/obj
+/RPFrameWork/Resources/bin/Debug/net6.0
+/RPFrameWork/Services/bin
+/RPFrameWork/Services/obj
+/RPFrameWork/Web/bin/Debug/net6.0
+/RPFrameWork/Web/obj
+/RPFrameWork/WebApi/bin
+/RPFrameWork/WebApi/obj
+/RPFrameWork/WebApi/Properties/PublishProfiles
+/RPFrameWork/SqlDb/bin/Debug
+/RPFrameWork/SqlDb/obj/Debug
+/RPFrameWork/SqlDb/SqlDb.jfm

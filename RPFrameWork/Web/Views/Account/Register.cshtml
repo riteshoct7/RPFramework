@@ -1,0 +1,64 @@
+﻿@model Dtos.ViewModels.RegisterViewModel
+@{
+    Layout = "_Layout";
+    var title = "Register";
+}
+
+
+<form method="post"  asp-action="Register" asp-controller="Account" asp-area="">
+    <h4>Create a new Account</h4>
+    <hr />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>  
+    <div class="row p-3 border">
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@title</h2>
+        </div>
+        <div class="col-12 pt-4">
+            <div class="form-group offset-1">
+                <label asp-for="FirstName" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="FirstName" class="form-control"  />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group offset-1 mt-3">
+                <label asp-for="LastName" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="LastName" class="form-control"  />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group offset-1 mt-3">
+                <label asp-for="Email" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="Email" class="form-control" type="email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group offset-1 mt-3">
+                <label asp-for="Password" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input type="password" asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group offset-1 mt-3">
+                <label asp-for="ConfirmPassword" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input type="password" asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>        
+             <div class="form-group row mt-3">
+                <div class="col-md-2 offset-1">
+                    <button type="submit" class="btn btn-primary form-control">Register</button>
+                </div>
+            </div>
+         </div>
+   </div>
+
+
+</form>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}
